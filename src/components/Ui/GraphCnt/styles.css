@@ -1,0 +1,22 @@
+.recharts-text {
+  font-family: Helvetica, sans-serif;
+  font-size: 8px;
+  fill: #dcdee0;
+}
+.recharts-cartesian-axis-tick-value {
+  font-size: 12px;
+}
+.custom-bar-1 {
+  fill: #6e62e5;
+}
+
+.custom-bar-2 {
+  fill: #d3cffc;
+}
+.recharts-cartesian-axis-line {
+  stroke: #dcdee0;
+}
+
+.recharts-cartesian-axis-tick-line {
+  stroke: #dcdee0;
+}
