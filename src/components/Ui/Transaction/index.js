@@ -125,7 +125,7 @@ const Transaction = () => {
     <div className="m-6 p-2">
       <div className="heading-month flex justify-between">
         <h2 className="text-2xl font-bold ">Transaction History</h2>
-        <div className="month-dropdown rounded-lg">
+        <div className="month-dropdown rounded-lg max-[400px]:hidden">
           {" "}
           <Dropdown
             menu={{
@@ -146,7 +146,7 @@ const Transaction = () => {
           </Dropdown>
         </div>
       </div>
-      <div className="dropdowns flex gap-10">
+      <div className="dropdowns flex gap-10 lg:flex-row flex-col w-[50%] lg:w-full" >
         <Space className="bg-[#e7e9ee] border-2 px-4 py-2 rounded-xl">
           Recepient
           <DownOutlined />
@@ -165,9 +165,9 @@ const Transaction = () => {
           <Column title="Customer" dataIndex="customer" key="customer" />
           <Column title="Status" dataIndex="status" key="status" />
 
-          <Column title="Date" dataIndex="date" key="date" />
-          <Column title="Invoice" dataIndex="invoice" key="invoice" />
-          <Column title="People" dataIndex="people" key="people" />
+          <Column className="max-[400px]:hidden" title="Date" dataIndex="date" key="date" />
+          <Column className="max-[400px]:hidden" title="Invoice" dataIndex="invoice" key="invoice" />
+          <Column className="max-[400px]:hidden" title="People" dataIndex="people" key="people" />
         </Table>
       </div>
     </div>

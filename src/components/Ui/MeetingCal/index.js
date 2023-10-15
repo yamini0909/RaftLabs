@@ -22,24 +22,24 @@ function MeetingCal() {
     if (week < 52) setWeek(week + 1);
   };
   return (
-    <div  className="divide-y">
+    <div  className="divide-y pb-96 lg:pb-10">
       <div style={{ margin: "20px", fontFamily: "Arial", color: "grey" }}>
         <div className="flex justify-between items-center w-full">
           <h2 className="text-2xl text-black my-4">October 2023</h2>
-          <div style={{ display: "flex", justifyContent: "" }}>
-            <div className="px-2 py-1 border-2 rounded-full mx-4 ">
-              <button  onClick={prevWeek}>
+          <div className="max-[400px]:hidden" style={{ display: "flex", justifyContent: "" }}>
+            <div className="px-2 py-1 border-2 rounded-full mx-4 max-[400px]:hidden ">
+              <button  onClick={prevWeek} >
                 {"<"}
               </button>
             </div>
 
-            <button className="px-2 border-2 rounded-full " onClick={nextWeek}>{">"}</button>
+            <button className="px-2 border-2 rounded-full max-[400px]:hidden " onClick={nextWeek}>{">"}</button>
           </div>
         </div>
 
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div className=" max-[400px]:hidden flex justify-between " >
           {days.map((day, index) => (
-            <div key={index} style={{ width: "100px", textAlign: "center" }}>
+            <div key={index} style={{ width: "10vw", textAlign: "center" }}>
               <div
                 style={{
                   display: "flex",

@@ -71,6 +71,7 @@ const App = () => {
         defaultSelectedKeys={["sub1"]}
         mode="inline"
         items={items}
+        breakpoint= "sm"
        />
     </div>
   );

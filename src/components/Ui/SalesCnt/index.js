@@ -2,7 +2,7 @@ import React from "react";
 
 const SalesCnt = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col sm:items-center">
       <div className="heading">
         <h1 className="text-lg text-black font-semibold">Total Sales & Cost</h1>
         <p className="text-sm text-[#8f8fb8]">Last 60 days</p>

@@ -20,7 +20,7 @@ const GreetingProfile = () => {
       <div className="flex justify-between items-center">
         <div className="flex justify-between items-center">
           <div className="">
-            <div className=" rounded-full border-2 py-2 px-4 shadow-lg shadow-grey-500/5 ">
+            <div className=" rounded-full border-2 py-2 px-4 shadow-lg shadow-grey-500/5 max-[900px]:hidden ">
               <Space>
                 <Avatar
                   src="https://xsgames.co/randomusers/avatar.php?g=pixel&key=1"

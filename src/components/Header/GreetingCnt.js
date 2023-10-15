@@ -19,15 +19,16 @@ const GreetingCnt = () => {
      </div>
           
           </Space> 
-      <div className="text-left ml-4 gap-0 flex flex-col">
-        <div className="text-[#414347] text-2xl font-bold my-0">
+      <div className="text-left ml-4 gap-0 flex flex-col max-[900px]:hidden">
+        <div className="text-[#414347] text-2xl font-bold my-0 ">
           Good Evening Team!
         </div>
-        <div className="text-[#caced3] my-0">
+        <div className="text-[#caced3] my-0 ">
           Have an in-depth look at all the metrics within your dashboard.
         </div>
       </div>
     </div>
+
   );
 };
 

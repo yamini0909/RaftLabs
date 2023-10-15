@@ -3,6 +3,7 @@ import { Layout, Space } from "antd";
 import SiderContent from "./components/Sider";
 import GreetingProfile from "./components/Header";
 import Container from './components/Container'
+import './App.css'
 const { Header, Footer, Sider, Content } = Layout;
 
 
@@ -23,6 +24,7 @@ const siderStyle = {
   color: "#606265",
   backgroundColor: "#fff",
   width: "100%"
+  
 };
 
 const bodyStyle ={
@@ -40,9 +42,8 @@ const App = () => (
     size={[0, 48]}
   >
     <Layout style={layoutStyle}>
-      <Layout style={siderStyle}>
-        <SiderContent />
-      </Layout>
+    <Sider style={siderStyle} breakpoint="sm" width="280"> <SiderContent  /></Sider>
+     
       <Layout style={bodyStyle}>
         <Layout style={headerStyle}>
           <GreetingProfile />

@@ -26,7 +26,7 @@ const data = [
 
 const GraphCnt = () => {
   return (
-    <div className="relative">
+    <div className="relative  max-[400px]:hidden">
     <div className="flex justify-between">
       <h2 className="font-bold text-right ml-14">Analytics <span className="text-[#68d789]">+5.4%</span></h2>
       <Space className=" px-4  rounded-lg text-grey">
