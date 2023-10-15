@@ -42,7 +42,7 @@ const MeetingDesc = () => {
   };
 
   return (
-    <div className="flex flex-col  p-4 gap-10 mx-6 my-8 rounded-3xl items-left">
+    <div className="flex flex-col  lg:p-4 gap-10 lg:mx-6 my-8 rounded-3xl items-left">
       {getCardData()}
     </div>
   );

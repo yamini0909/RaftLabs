@@ -26,7 +26,7 @@ const BlueCnt = () => {
   ];
   const getCardData = () => {
     return data.map((obj, index) => (
-      <div key={index} className="flex lg:justify-around justify-center items-center my-6 lg:w-full w-[50%]">
+      <div key={index} className="flex lg:justify-around justify-center items-center my-6 lg:w-full">
         <div className="blue-img mr-4 bg-cyan-300 p-6 rounded-full"></div>
         <div>
           <h2 className="font-thin text-lg">{obj.title}</h2>
@@ -46,7 +46,7 @@ const BlueCnt = () => {
   };
 
   return (
-    <div className="lg:flex lg:flex-row bg-[#6e62e5] text-white lg:p-4 p-6 lg:gap-10 lg:mx-2 my-4  lg:my-8 rounded-3xl lg:justify-evenly flex items-center mx-6 gap-0 flex-col">
+    <div className="lg:flex lg:flex-row bg-[#6e62e5] text-white mx-6  lg:p-6 lg:gap-10  my-4  lg:my-8 rounded-3xl lg:justify-evenly flex items-center lg:mx-6 gap-0 flex-col">
       {getCardData()}
     </div>
   );
